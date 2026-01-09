@@ -9,6 +9,7 @@
    使用 OpenSSL 查出證書在 Android 系統中所需的特定名稱。
    ```bash
    openssl x509 -subject_hash_old -in "你的證書名稱.pem"
+3.將獲取到的證書名稱修改檔案名為 xxxxx.0
 
 # 取得 root 權限並掛載系統分區
  ```bash
