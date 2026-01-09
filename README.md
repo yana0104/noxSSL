@@ -1,4 +1,4 @@
-Charles流程
+#Charles流程
 1.導出 Charles 的證書
 2.使用openssl 查出 Charles 證書的名稱
 2-2.openssl x509 -subject_hash_old -in “xxx.pem”
