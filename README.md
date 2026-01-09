@@ -1,15 +1,14 @@
-1.导出chaeles证书 
-1-1.hash证书得到名称(需要安装openssl)
-openssl x509 -subject_hash_old -in “xxx.pem”
+Charles流程
+1.導出 Charles 的證書
+2.使用openssl 查出 Charles 證書的名稱
+2-2.openssl x509 -subject_hash_old -in “xxx.pem”
+3.修改 Charles 導出的證書名稱 為 xxxxxxx.0
 
-1-2.改名称 c146f3b1.0 = 改成自己的证书名称
 
-
-
-2.把证书丢到模拟器资料夹里
-
-系统管理员下执行cmd
-cmd在模拟器资料夹下 操作以下
+模擬器流程
+1.將證書放置模擬器的資料夾中
+2.執行模擬器 以及 在資料夾內打開命令字元
+3.執行代碼
 
 adb root
 adb remount
