@@ -18,10 +18,10 @@ adb remount
 
 # 將證書推送到系統憑證路徑
 adb push 5f1828fc.0 /system/etc/security/cacerts
-
-
 adb shell
+
 su
+
 # 重新掛載為讀寫模式 (若 remount 失敗時使用)
 mount -o remount,rw /system
 # 修正權限 (644) 與擁有者 (root)
