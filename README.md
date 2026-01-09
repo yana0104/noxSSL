@@ -10,29 +10,19 @@
    ```bash
    openssl x509 -subject_hash_old -in "你的證書名稱.pem"
 
-
-
 # 取得 root 權限並掛載系統分區
  ```bash
 adb root
-
 adb remount
-
 # 將證書推送到系統憑證路徑
 adb push 5f1828fc.0 /system/etc/security/cacerts
-
 adb shell
-
 su
-
 # 重新掛載為讀寫模式 (若 remount 失敗時使用)
 mount -o remount,rw /system
 # 修正權限 (644) 與擁有者 (root)
 chmod 644 /system/etc/security/cacerts/5f1828fc.0
-
 chown root:root /system/etc/security/cacerts/5f1828fc.0
-
 exit
-
 # 重啟模擬器生效
 adb reboot
