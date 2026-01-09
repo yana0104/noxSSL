@@ -13,6 +13,7 @@
 
 
 # 取得 root 權限並掛載系統分區
+ ```bash
 adb root
 
 adb remount
